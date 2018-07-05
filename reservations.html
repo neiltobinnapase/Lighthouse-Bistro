@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Neil Tobin Napase - Project Six -->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> The Lighthouse Bistro Menu</title>
+	<link rel="stylesheet" href="bistro.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header role="banner">
+			<h1> The Lighthouse Bistro </h1>
+		</header>
+
+		<nav role="navigation">
+			<ul>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="menu.html"><b>Our Menu</b></a></li>
+				<li><a href="EntertainmentSchedule"><b>Entertainment Schedule</b></a></li>
+				<li><a href="reservations.html"><b>Reservations</b></a></li>
+			</ul>
+			<div id="address"> 
+				<aside> The Lighthouse Bistro </aside>
+				<aside> #27 Lighthouse Road </aside>
+				<aside> Mackinac City, Michigan 49701 <br /><br /> </aside>
+				<a href="tel:888-555-5555" id="displayTele"> 888-555-5555</a>
+				<aside id="displayTeleText" class="tele"> 888-555-5555</aside>
+			</div>
+		
+		</nav>
+		
+		<main role="main">
+
+		<h2> Reservations at The Lighthouse Bistro </h2>
+		<h3> Contact Us Today To Make Your Dining Reservation! </h3>
+		<p> Required fields are marked with an asterisk * </p>
+		
+		<form method="post" action="https://cs.ucf.edu/~markl/bistroformreport.php">
+		
+			<fieldset>
+				<label for="myFName"> *First Name: </label>
+				<input type="text" id="myFName" name="myFName" required="required" autofocus /> <br /> <br />
+				
+				<label for="myLName"> *Last Name: </label>
+				<input type="text" id="myLName" name="myLName" required="required" /> <br /> <br />
+				
+				
+				<label for="myEmail"> *Email: </label>
+				<input type="email" id="myEmail" name="myEmail" required="required" /> <br /> <br />
+				
+				<label for="myPhone"> Phone: </label>
+				<input type="tel" id="myPhone" name="myPhone" /> <br /> <br />
+				
+				<label for="myDate"> Date: </label>
+				<input type="date" id="myDate" name="myDate" /> <br /> <br />
+				
+				<label for="myTime"> Time: </label>
+				<input type="time" id="myTime" name="myTime" /> <br /> <br />
+				
+				<label for="myGuests"> Number of Guests: </label>
+				<input type="number" id="myGuests" name="myGuests" min="1" max="16" /> <br /> <br />
+				
+				<label for="myComments"> *Comments: </label>
+				<textarea id="myComments" name="myComments" rows="2" required="required" > </textarea><br /> <br /> <br />	
+				
+				<input type="submit" class="submit" value="Submit" /> <br />
+			</fieldset>		
+		
+		</form> <br /> <br />
+		
+		
+			<footer role="contentinfo" id="displaySmallFooter">
+				Copyright &copy; 2017 The Lighthouse Bistro <br />
+				<u>Neil@Napase.com</u> <br />
+				Today is: <span id="smallDateAndTime"> hold it </span> 
+			</footer>
+		</main>		
+
+		<footer role="contentinfo" id="displayFooter">
+			Copyright &copy; 2017 The Lighthouse Bistro <br />
+			<u>Neil@Napase.com</u> <br />
+			Today is: <span id="dateAndTime"> hold it </span>
+		</footer>		
+	</div>
+	
+	<script src="functions.js"> </script>
+</body>
+</html>
